@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>
+            hand gesture app 
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+    </head>
+    <body style="font-family:fantasy; background-color: rgb(253, 145, 5); ">
+        <div class="container">
+            <center>
+                <label class="btn btn-warning">hand gesture recongnizine app
+                    <br>
+                    <span>&#9995;&#127995;</span>
+                    <span>&#9996;&#127995;</span>
+                    <span>&#128074;&#127995;</span>
+                    <span>&#128075;&#127995;</span>
+                    <span>&#128076;&#127995;</span>
+                    <span>&#128077;&#127995;</span>
+                    <span>&#128079;&#127995;</span>
+                </label>
+                <br>
+                <br>
+                <h6>the model is trained for these gestures 
+                    <br>
+                    <span>&#9995;&#127995;</span>
+                    <span>&#9996;&#127995;</span>
+                    <span>&#128074;&#127995;</span>
+                    <span>&#128075;&#127995;</span>
+                    <span>&#128076;&#127995;</span>
+                    <span>&#128077;&#127995;</span>
+                    <span>&#128079;&#127995;</span>
+                </h6> 
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                <label style="float: left;">take image</label>
+                <div style="float: left;" id="camera">
+                    </div>
+
+                <button type="button"  class="btn btn-primary" onclick="takamaka()"> take click</button>
+            </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <label class="checkitout">
+                        prediction
+                        <label class="updateemoji1"></label>
+                    </label>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <label class="checkitout1">
+                        prediction2
+                        <label class="updateemoji"></label>
+                    </label>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                <label style="float: right;">snapshot</label>
+                <div style="float: right;" id="result"> 
+                </div>
+                <button type="button" class="btn btn-primary" onclick="hakahakakak()"> prediction</button>
+            </div>
+            </center>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
